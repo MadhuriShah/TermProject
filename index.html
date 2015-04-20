@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="themes/shahTheme.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -27,7 +28,7 @@
 <!--Home-->
 <div data-role="page" id="home">
   <header data-role="header">
-    <h1>SM Gift City</h1>
+    <h1 style="font-family: 'Courgette', cursive;">SM Gift City</h1>
 			<div data-role="navbar">
 			  <ul>
 				<li><a href="#home" data-icon="home">Home</a></li>
@@ -193,7 +194,15 @@
 
 	</div>
 
-<a href="#submit" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition= "slidedown " data-rel="dialog">Submit</a>
+				<a href="#submit" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-shadow ui-btn">Submit</a>
+				<div data-role="popup" id="submit">
+				  <div data-role="header">
+					<h1>Acknowledgement</h1>
+				  </div>				  
+				  <div data-role="main" class="ui-content">
+					<p>Are you sure , you want to submit form...?</p>
+					<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-btn ui-btn-b">Ok</a>
+				  </div>
 
 	
 	</form>
