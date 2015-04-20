@@ -68,7 +68,6 @@
    </header>
   
 	<section data-role="main" class="ui-content">
-
     </section>
 
     <footer data-role="footer">
@@ -94,7 +93,59 @@
    </header>
   
 	<section data-role="main" class="ui-content">
-	<h1> contact us</h1>
+	<h1> Contact us</h1>
+	<form>
+	<div class="ui-field-contain">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name">
+	</div>
+	<div class="ui-field-contain">
+		<label for="name">Email:</label>
+		<input type="email" name="name" id="name">
+	</div>
+	<div class="ui-field-contain">
+		<label for="name">Select an issue:</label>
+		<select>
+		<option> Damaged product </option>
+		<option> Problem with product </option>
+		<option> Returns and Refund </option>
+		<option> Change an order </option>
+		<option> 
+		</select>
+	</div>
+	<div class="ui-field-contain">
+		<label for="name">Order Number:</label>
+		<input type="email" name="name" id="order">
+	</div>
+	<div class="ui-field-contain">
+		<label for="name">Date Of Purchase:</label>
+		<input type="date" name="name" id="name">
+	</div>
+	<div class="ui-field-contain">
+		<label for="itemsQty">Items purchased:</label>
+		<input type="range" name="itemsQty" id="itemsQty" min="1" max="50" value="5">
+	</div>
+	<div class="ui-field-contain">
+		<label for="itemsQty">How would you like to contacts us:</label>
+		<fieldset data-role="controlgroup">
+		<input type="radio" name="radio-choice-1" id="radio-choice-1" value="email" checked="checked">
+        <label for="radio-choice-1">Email</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="phone">
+        <label for="radio-choice-2">Phone</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="chat">
+        <label for="radio-choice-3">Chat</label>
+		</fieldset>
+	</div>
+	<div class="ui-field-contain">
+		<label for="name">Payment Method:</label>
+		    <input type="checkbox" data-role="flipswitch" name="flip-checkbox-2" id="flip-checkbox-2" data-on-text="Credit" data-off-text="Debit" data-wrapper-class="custom-label-flipswitch">
+
+	</div>
+
+<a href="#submit" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition= "slidedown " data-rel="dialog">Submit</a>
+
+	
+	</form>
     </section>
 
     <footer data-role="footer">
@@ -102,7 +153,11 @@
     </footer>
  <!--- -->
 
-
 </div> 
+<!---Message-->
+<div id="submit">
+<p> Hello world</p>
+</div>
+<!-- -->
 </body>
 </html>
